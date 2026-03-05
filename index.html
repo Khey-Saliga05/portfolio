@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
-<body style="background-color: beige; font-family: 'Roboto', sans-serif; margin-left: -5px; margin-top: -5px;">
+<body style="background-color: beige; font-family: 'Roboto', sans-serif; margin: 0; padding: 0; flex-wrap: wrap;">
 
-    <nav style="position:fixed; top: 0; left:0; right:0;flex-direction: column; height:56px; display:flex; align-items:center; justify-content:center; display: flex; gap:12px; text-align: center; background:rgba(0,0,0,0.55); color:#fff; z-index:9999; backdrop-filter: blur(4px);">
+    <nav
+        style="position:fixed; top: 0; left:0; right:0; flex-direction: column; min-height:56px; padding: 10px 0; display:flex; align-items:center; justify-content:center; display: flex; gap:12px; text-align: center; background:rgba(0,0,0,0.55); color:#fff; z-index:9999; backdrop-filter: blur(4px); flex-wrap: wrap;">
 
-        <div style="display:flex; gap:20px; align-items:center; justify-content: space-between;">
+        <div style="display:flex; gap:20px; align-items:center; justify-content: center; flex-wrap:wrap;">
             <a href="#home" style="color:inherit; text-decoration:none; font-weight:500;">Home</a>
             <a href="#about" style="color:inherit; text-decoration:none; font-weight:500;">About</a>
             <a href="#eb" style="color:inherit; text-decoration:none; font-weight:500;">Educational Background</a>
@@ -22,11 +29,11 @@
     </nav>
 
     <div id="home"
-        style="background-image: url('bg.jpg'); background-size: cover; width: 100vw; min-height: 100vh; flex-direction: column; align-items: center; justify-content: center; display: flex; text-align: center; color: white;">
+        style="padding-top: 80px; background-image: url('bg.jpg'); background-size: cover; width: 100%; min-height: 100vh; flex-direction: column; align-items: center; justify-content: center; display: flex; text-align: center; color: white;">
         <hr>
         <h1 style="text-align: center; font-size:50px;">My Portfolio</h1>
         <img src="pfp.jpg" alt="My PFP"
-            style="width: 300px; height: 300PX; border-radius: 50%; display: block; margin: 20px auto; margin-bottom: -5px; ">
+            style="width: 100%; max-width: 300px; height: auto; border-radius: 50%; display: block; margin: 20px auto; margin-bottom: -5px; ">
         <h1 style="text-align: center; font-size: 40px; margin-top: 15px; ">Khey Saliga</h1>
         <p style="text-align: center; font-size: 25px; margin-top: -15px;"><b>Junior Software Developer | Junior Web
                 Developer</b>
@@ -34,8 +41,9 @@
     </div>
 
     <div id="about"
-        style="box-sizing: border-box; margin: 0; padding: 40px; width: 100vw; min-height: 100vh; align-items: center; justify-content: center; display: flex; text-align: justify;   ">
-        <div style="flex: 1; padding-left: 40px;">
+        style="box-sizing: border-box; margin: 0; padding: 40px; width: 100%; min-height: 100vh; align-items: center; justify-content: center; display: flex; flex-wrap: wrap; text-align: justify;   ">
+        <div
+            style="flex: 1; min-width: 280px; padding-left: 40px; flex-wrap: wrap; display: flex; justify-content: flex-start; align-items: center;">
             <h1 style="font-size: 50px; text-align: center;">About Me</h1>
             <p style="font-size: 20px; line-height: 1.8;"> My Name is Kheyron Maluenda Saliga, 20 years of age, born in
                 November 10, 2005.
@@ -44,42 +52,44 @@
                 Websites</p>
         </div>
 
-        <div style="flex: 1; display: flex; justify-content: flex-start; align-items: center; padding-right: 40px;">
+        <div
+            style="flex: 1; min-width: 280px; display: flex; justify-content: flex-start; align-items: center; padding-right: 40px;">
             <hr>
             <img src="pic.jpg" alt="my pfp" style="max-width: 400px; width: 100%; height: auto; border-radius: 12px;">
         </div>
     </div>
 
     <div id="eb"
-        style="width: 100vw; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box;">
+        style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box;">
         <hr>
         <h1>Educational Background</h1>
 
         <div>
-            <div style="display:flex; gap:20px; width:100%; max-width:1100px;">
+            <div
+                style="display:flex; gap:20px; width:100%; max-width:1100px; flex-wrap: wrap; justify-content: center;">
                 <div
-                    style="flex:1; padding:16px; border-radius:8px; text-align:center; box-sizing: border-box; background-color: #d2b48c; width: 300px; min-height: 350px;">
+                    style="flex:1; padding:16px; border-radius:8px; text-align:center; box-sizing: border-box; background-color: #d2b48c; width: 100%; max-width: 300px; min-height: 350px;">
                     <h2 style="margin-top:0; font-size:20px;">Elementary</h2>
                     <img src="images.jpg" alt="MBCA"
-                        style="width:250px; height:auto; object-fit:cover; border-radius: 12px;">
+                        style="max-width:250px; width: 100%; height:auto; object-fit:cover; border-radius: 12px;">
                     <p style="margin:12px 0 0; margin-top: 25px;">Maramag Baptist Christian Academy<br>S.Y 2016-2017</p>
                 </div>
 
                 <div
-                    style="flex:1; padding:16px; border-radius:8px; text-align:center; box-sizing: border-box; background-color: #d2b48c;">
+                    style="flex:1; padding:16px; border-radius:8px; text-align:center; box-sizing: border-box; background-color: #d2b48c; max-width: 300px; width: 100%;">
                     <h2 style="margin-top:0; font-size:20px;">Highschool / Senior Highschool</h2>
                     <img src="bnshi.jpg" alt="BNSHI"
-                        style="width:250px; height: 200px; object-fit:cover; border-radius: 12px;">
+                        style="max-width:250px; width: 100%; max-height: 200px; object-fit:cover; border-radius: 12px;">
                     <p style="margin:12px 0 0;">Bukidnon National School of Home Industry S.Y 2017-2022
                         Highschool<br>S.Y 2022-2024 Senior Highschool
                     </p>
                 </div>
 
                 <div
-                    style="flex:1;padding:16px; border-radius:8px; text-align:center; box-sizing: border-box; background-color: #d2b48c;">
+                    style="flex:1;padding:16px; border-radius:8px; text-align:center; box-sizing: border-box; background-color: #d2b48c; max-width: 300px; width: 100%;">
                     <h2 style="margin-top:0; font-size:20px;">College</h2>
                     <img src="AMA.jpg" alt="AMA"
-                        style="width:250px; height:auto; object-fit:cover; border-radius: 12px;">
+                        style="max-width:250px; width: 100%; height:auto; object-fit:cover; border-radius: 12px;">
                     <p style="margin:12px 0 0; margin-top: 30px;">ACLC College of Bukidnon <br>S.Y 2024-Present</p>
                 </div>
             </div>
@@ -90,7 +100,7 @@
 
 
     <div id="skills"
-        style="align-items: center; text-align: center; justify-content: center; width: 100vw; min-height: 100vh; display: flex; flex-direction: column; padding-top: auto; box-sizing: border-box; gap: 20px; flex-wrap: wrap;">
+        style="align-items: center; text-align: center; justify-content: center; width: 100%; min-height: 100vh; display: flex; flex-direction: column; padding-top: auto; box-sizing: border-box; gap: 20px; flex-wrap: wrap;">
         <h1>Skills</h1>
 
         <div style="display:flex; gap:30px; width:100%; max-width:1100px; flex-wrap: wrap; justify-content: center;">
@@ -134,14 +144,14 @@
     </div>
 
     <div id="projects"
-        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; width: 100vw; min-height: 100vh; text-align: center; box-sizing: border-box;">
+        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; width: 100%; min-height: 100vh; text-align: center; box-sizing: border-box;">
 
         <h1>Projects</h1>
 
-        <div style="display: flex; flex-direction: row; gap: 40px; justify-content: center; align-items: flex-start;">
+        <div style="display:flex; flex-wrap:wrap; gap:40px; justify-content:center;">
 
             <div
-                style="display: flex; flex-direction: column; align-items: center; background-color: #d2b48c; padding: 20px; border-radius: 12px; width: 300px; height: 285.8px;">
+                style="display: flex; flex-direction: column; align-items: center; background-color: #d2b48c; padding: 20px; border-radius: 12px; max-width: 300px; width: 100%; height: 285.8px;">
                 <p style="margin-top: 5px;"><b>Project 1</b><br>Basic HTML/CSS Ecommerce Site</p>
                 <img src="image copy.png" alt="P1"
                     style="width: 300px; height: auto; border-radius: 12px; object-fit: cover;">
@@ -149,7 +159,7 @@
             </div>
 
             <div
-                style="display: flex; flex-direction: column; align-items: center; background-color: #d2b48c; padding: 20px; border-radius: 12px; width: 300px; height: 285.8px;">
+                style="display: flex; flex-direction: column; align-items: center; background-color: #d2b48c; padding: 20px; border-radius: 12px; max-width: 300px; width: 100%; height: 285.8px;">
                 <p style="margin-top: 2px;"><b>Project 2</b><br>Basic HTML/CSS Portfolio</p>
                 <img src="image.png" alt="2nd Proj"
                     style="width: 300px; height: auto; border-radius: 12px; object-fit: cover;">
@@ -159,9 +169,9 @@
         </div>
     </div>
 
-    <div id="contact"> 
+    <div id="contact">
         <div
-            style="width: 100vw; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+            style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
             <h1>Contact Me</h1>
             <!--<p><b>Email: </b><a href="kheyronsaliga@aclcbukidnon.com">kheyronsaliga@aclcbukidnon.com</a></p>
             <p><b>Facebook: </b><a href="https://www.facebook.com/profile.php?id=61577697478709">Kh Ey</a></p>
@@ -174,37 +184,27 @@
             </p>-->
 
             <form
-            style="display: flex; flex-direction: column; gap: 12px; width: 320px; background-color: #d2b48c; padding: 20px; border-radius: 12px;">
-            
-            <input
-                type="text"
-                placeholder="Your Name"
-                required
-                style="padding: 10px; border-radius: 6px; border: none;">
+                style="display: flex; flex-direction: column; gap: 12px; max-width: 320px; width: 100%; background-color: #d2b48c; padding: 20px; border-radius: 12px;">
 
-            <input
-                type="email"
-                placeholder="Your Email"
-                required
-                style="padding: 10px; border-radius: 6px; border: none;">
+                <input type="text" placeholder="Your Name" required
+                    style="padding: 10px; border-radius: 6px; border: none;">
 
-            <textarea
-                rows="4"
-                placeholder="Your Message"
-                required
-                style="padding: 10px; border-radius: 6px; border: none;"></textarea>
+                <input type="email" placeholder="Your Email" required
+                    style="padding: 10px; border-radius: 6px; border: none;">
 
-            <button
-                type="submit"
-                style="padding: 10px; border-radius: 6px; border: none; background-color: #333; color: white; cursor: pointer;">
-                Send Message
-            </button>
-        </form>
+                <textarea rows="4" placeholder="Your Message" required
+                    style="padding: 10px; border-radius: 6px; border: none;"></textarea>
+
+                <button type="submit"
+                    style="padding: 10px; border-radius: 6px; border: none; background-color: #333; color: white; cursor: pointer;">
+                    Send Message
+                </button>
+            </form>
         </div>
     </div>
 
     <div
-        style="width: 100vw; height: 10px; align-items: center; justify-content: center; display: flex; text-align: center; padding: 20px; box-sizing: border-box; background-color: #d2b48c; margin-bottom: -20px;">
+        style="width: 100%; height: 10px; align-items: center; justify-content: center; display: flex; text-align: center; padding: 20px; box-sizing: border-box; background-color: #d2b48c; margin-bottom: -20px;">
         <p>&copy; 2026 SALIGA, KHEYRON. OHAHAY</p>
     </div>
 
